@@ -11,8 +11,14 @@ public class Driver {
      System.out.println(P2);
      System.out.println(P3);
      System.out.println("--- POINTS ACTIVE ---");
+     //distance formulas - what's wrong?
      System.out.println(Point.distance(P1,P2));
      System.out.println(P1.distanceTo(P2));
      System.out.println(Point.distance(P1, P3));
+     System.out.println(P1.distanceTo(P3));
+     System.out.println("\n");
+     //triangles!
+     Triangle T1 = new Triangle(P1, P2, P3);
+     System.out.println(T1);
   }
  }

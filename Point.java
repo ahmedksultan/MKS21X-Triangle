@@ -6,7 +6,7 @@ public class Point {
      //POINTS!!!
      public Point(double X, double Y) {
           x = X;
-          y = y;
+          y = Y;
      }
      public Point(Point p) {
           x = p.x;
