@@ -16,8 +16,33 @@ public class Triangle {
           return PA.distanceTo(PB) + PB.distanceTo(PC) + PC.distanceTo(PA);
      }
      public String toString() {
-          return "Triangle: \n\tA(" + PA.getX() + ", " + PA.getY() + ")" +
-                    "\n\tB(" + PB.getX() + ", " + PB.getY() + ")" +
-                    "\n\tC(" + PC.getX() + ", " + PC.getY() + ")";
+          return "Triangle: A(" + PA.getX() + ", " + PA.getY() + ")" +
+                    " B(" + PB.getX() + ", " + PB.getY() + ")" +
+                    " C(" + PC.getX() + ", " + PC.getY() + ")";
+     }
+     //vertices
+     public Point getVertex(int index) {
+          if (index == 0) {
+               return PA;
+          }
+          else if (index == 1) {
+               return PB;
+          }
+          else if (index == 2) {
+               return PC;
+          }
+          return null;
+     }
+     //Alma helped me with this
+     public void setVertex(int index, Point newPt) {
+          if (index == 0) {
+               PA = newPt;
+          }
+          else if (index == 1) {
+               PB = newPt;
+          }
+          else {
+               PC = newPt;
+          }
      }
 }
